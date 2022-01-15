@@ -1,0 +1,33 @@
+// A Very Big Sum
+/* In this challenge, you are required to calculate and print the sum of the elements in an array, keeping in mind that some of those integers may be quite large.
+
+Function Description
+
+Complete the aVeryBigSum function in the editor below. It must return the sum of all array elements.
+
+aVeryBigSum has the following parameter(s):
+
+int ar[n]: an array of integers .
+Return
+  long: the sum of all array elements */
+  
+  // CODE OF ABOVE PROBLEM STATEMENT
+  #include <iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cin>>n;
+    long long int ar[n], sum;
+    for(int i=0; i<n; i++)
+    {
+        cin>>ar[i];
+    }
+    
+    for(int i=0; i<n; i++)
+        sum+=ar[i];
+    
+    cout<<sum;
+        
+    return 0;
+}
